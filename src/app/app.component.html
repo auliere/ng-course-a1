@@ -17,3 +17,11 @@
 
 <app-warning-alert></app-warning-alert>
 <app-success-alert></app-success-alert>
+
+<hr>
+
+<app-warning-alert message="What's wrong?"></app-warning-alert>
+
+<input type="text" [(ngModel)]="successMessage" />
+
+<app-success-alert [message]="successMessage"></app-success-alert>

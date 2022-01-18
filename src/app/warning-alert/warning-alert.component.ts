@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
 @Component({ 
     selector: 'app-warning-alert',
@@ -10,5 +10,7 @@ import { Component } from '@angular/core'
     ]
 })
 export class WarningAlertComponent { 
+    
+    @Input()
     message: string = "Something is wrong here...."
 }
