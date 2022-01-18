@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 
 @Component({ 
     selector: 'app-warning-alert',
-    template: `<h4>Warning! Something is wrong here....</h4>`,
+    template: `<h4>Warning! {{ message }}</h4>`,
     styles: [
         `h4 {
             color: orange
@@ -10,5 +10,5 @@ import { Component } from '@angular/core'
     ]
 })
 export class WarningAlertComponent { 
-
+    message: string = "Something is wrong here...."
 }
